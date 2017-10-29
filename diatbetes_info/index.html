@@ -4,10 +4,11 @@
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/scriptz.js"></script>
 <title>diabetes info</title>
 </head>
 <body>
@@ -19,21 +20,32 @@
   </div>
   <div class="row">
   <div class="row content">
-    <div class="col-md-4">
-        <a href="#"><p>lolz</p></a>
+    <div class="col-md-2">
+        <a id="link_def" href="#"><p>Definition of Diatbetes</p></a>
       </div>
-      <div class="col-md-4">
-        <a href="#"><p>lolz</p></a>
+      <div class="col-md-2">
+        <a id="link_sym" href="#"><p>symptoms of Diatbetes</p></a>
       </div>
-      <div class="col-md-4">
-        <a href="#"><p>lolz</p></a>
+      <div class="col-md-2">
+        <a id="link_doc" href="#"><p>When to see a doctor</p></a>
     </div>
+    <div id="link_caus" class="col-md-2">
+      <a href="#"><p>Causes of Diatbetes</p></a>
+  </div>
+  <div id="link_treat" class="col-md-2">
+    <a href="#"><p>Treatment for Diabetes</p></a>
+</div>
+
+<div id="link_info" class="col-md-2">
+  <a href="#"><p>For more information</p></a>
+</div>
+
   </div>
 
 
 
     <div class="row content">
-  <div class="col-md-12 col-sm-12 row">
+  <div id="definition" class="col-md-12 col-sm-12 row">
   <h3>Diabetes definition</h3>
   <br>
   <br>
@@ -51,7 +63,7 @@ which occurs during pregnancy but may resolve after the baby is delivered.
   </div>
 </div>
   <div class="row content">
-    <div class="col-md-12 col-sm-12">
+    <div  id="symptoms" class="col-md-12 col-sm-12">
       <h3>symptom of diabetes</h3>
       <br>
       <br>
@@ -83,7 +95,7 @@ Some of the signs and symptoms of type 1 and type 2 diabetes are:
   </div>
 
   <div class="row content">
-    <div class="col-md-12 col-sm-12">
+    <div id="doctor" class="col-md-12 col-sm-12">
       <h3>when to see a doctor?</h3>
       <br>
       <br>
@@ -99,7 +111,7 @@ Some of the signs and symptoms of type 1 and type 2 diabetes are:
 
 
   <div class="row content">
-    <div class="col-md-12 col-sm-12">
+    <div id="causes" class="col-md-12 col-sm-12">
       <h3>causes</h3>
       <br>
       <br>
@@ -162,7 +174,7 @@ Some of the signs and symptoms of type 1 and type 2 diabetes are:
 
 
   <div class="row content">
-    <div class="col-md-12 col-sm-12">
+    <div id="treatment" class="col-md-12 col-sm-12">
       <h3>treatment</h3>
       <br>
       <br>
@@ -273,14 +285,17 @@ Your doctor might prescribe low-dose aspirin therapy to help prevent cardiovascu
     </div>
   </div>
 
-<div class="row content">
-  <div class="col-md-12 col-sm-12">
-    <p>reference from <a href="http://www.mayoclinic.org/">mayo clinic</a></p>
+  <div class="row content">
+    <div id="information" class="col-md-12 col-sm-12">
+          <p>reference from <a href="http://www.mayoclinic.org/">mayo clinic</a></p>
+    </div>
   </div>
-</div>
 
   <div class="row footer">
-    <div class="col-md-12 col-sm-12"><p>develope by Phillip salazar</p></div>
+    <div class="col-md-6 col-sm-6"><p>develope by Phillip salazar</p></div>
+    <div class="col-md-6 col-sm-6">
+      <p>reference from <a href="http://www.mayoclinic.org/">mayo clinic</a></p>
+    </div>
   </div>
 </div>
 </body>
