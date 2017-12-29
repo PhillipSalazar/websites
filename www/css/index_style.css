@@ -1,0 +1,44 @@
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+  margin-left: 10%;
+}
+/* rows styling */
+.rows_of_content {
+  height: 350px;
+  border: 2px solid black;
+}
+
+.last_row {
+  border: 2px solid blue;
+  height: 100px;
+}
+
+/* styling */
+.boxes_of_websites {
+  height: 250px;
+  width: 250px;
+  border: 2px solid purple
+}
+
+.page-head {
+  background-color: #404040;
+}
+.page-header {
+  color: white;
+}
+
+.navbar {
+  background-color:  #2eb82e;
+}
+
+.row_c_2 {
+  background-color:  #2eb82e;
+}
+
+.last_row {
+  background-color: #404040;
+}
