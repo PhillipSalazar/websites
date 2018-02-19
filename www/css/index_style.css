@@ -1,3 +1,22 @@
+/* variables */
+@font-face {
+    font-family: fontz;
+    src: url(../assets/font.ttf);
+}
+/* tags */
+h1 {
+  font-family: fontz;
+  color: white;
+}
+a {
+  color: white;
+}
+
+p {
+  color: white;
+  font-family: fontz;
+}
+
 ul {
   list-style: none;
 }
@@ -9,36 +28,109 @@ li {
 /* rows styling */
 .rows_of_content {
   height: 350px;
-  border: 2px solid black;
+/*  border: 2px solid black; */
 }
 
 .last_row {
-  border: 2px solid blue;
-  height: 100px;
+  background-color: #404040;
+  height: 200px;
 }
-
 /* styling */
+
+
 .boxes_of_websites {
   height: 250px;
   width: 250px;
-  border: 2px solid purple
+  margin-left: 30%;
+  margin-top: 5%;
+  border-radius: 20px;
+}
+
+.boxes_of_websites img {
+  width: 125px;
+  margin-left: 25%;
+  margin-top: 25%;
+}
+
+#intro_text {
+  margin-left: 35%;
+  margin-top: 2%;
+}
+
+#projects {
+  background-color: #404040;
+}
+
+#games {
+  background-color: #8a00e6;
+}
+#blogz {
+  background-color: yellow;
+}
+
+#about {
+  background-color:  #33cc33;
+
 }
 
 .page-head {
   background-color: #404040;
+/*  border-bottom: 1px solid white; */
 }
 .page-header {
   color: white;
+  margin-left: 35%;
+  border-bottom: none !important;
 }
 
 .navbar {
-  background-color:  #2eb82e;
+  background-color:  #404040;
+  /* #2eb82e; */
 }
 
-.row_c_2 {
-  background-color:  #2eb82e;
-}
-
-.last_row {
+.dark {
   background-color: #404040;
+}
+
+.row_c_1 {
+  background-color: #404040;
+  /*#2eb82e;*/
+}
+
+.bottom {
+  margin-left: 15%;
+  margin-top: 3%;
+}
+/* Email sender */
+.row_of_email {
+  height: 750px;
+}
+
+.email_box {
+  margin-left: 35%;
+  margin-top: 2%;
+}
+
+.email_box p {
+  margin-left: 13%;
+}
+
+.email_sender {
+  height: 25px;
+  width: 250px;
+  margin-left: 10%;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.email_message {
+  height: 350px;
+  width: 500px;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.email_box button {
+  margin-left: 17%;
+  width: 100px;
 }

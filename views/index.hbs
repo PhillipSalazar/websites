@@ -5,44 +5,84 @@
 <link href="/css/index_style.css" rel="stylesheet">
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
-
+<script src="/js/scripts.js"></script>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 </head>
 <body>
 <div class="container-fluid">
 <!-- header row -->
 <div class="row page-head">
   <div class="page-header">
-<h1>{{title}}</h1>
+<a href="/"><h1>{{title}}</h1></a>
 <p>{{about}}</p>
 
   </div>
 </div>
 
 <!-- navbar row -->
-<div class="row navbar">
-  <ul>
-    <li>Home</li>
-    <li>blog</li>
-    <li>projects</li>
-  </ul>
-</div>
 
 <!-- content for websites row -->
 <div class="row rows_of_content row_c_1">
+<!--
   <div class="boxes_of_websites"></div>
   <a href="https://diabetes-info.herokuapp.com/">diatbetes information website</a>
+-->
+<p id="intro_text">{{intro_text}}</p>
 </div>
 
 <!-- content for games row -->
 <div class="row rows_of_content row_c_2">
-</div>
 
+<div class="col-md-6">
+  <div id="projects" class="boxes_of_websites">
+  <img src="assets/programming-code.svg">
+</div>
+<!--  <a href="https://diabetes-info.herokuapp.com/">diatbetes information website</a> -->
+</div>
+<div class="col-md-6">
+  <div id="games" class="boxes_of_websites">
+    <img src="assets/gamepad.svg">
+  </div>
+<!--  <a href="https://diabetes-info.herokuapp.com/">diatbetes information website</a> -->
+</div>
+</div>
 <!-- content for post row -->
 <div class="row rows_of_content row_c_3">
-</div>
 
+<div class="col-md-6">
+  <div id="blogz" class="boxes_of_websites">
+    <img src="assets/blogger.svg">
+  </div>
+<!--  <a href="https://diabetes-info.herokuapp.com/">diatbetes information website</a> -->
+</div>
+<div class="col-md-6">
+  <div id="about" class="boxes_of_websites">
+    <img src="assets/about-successful-man.svg">
+  </div>
+<!--  <a href="https://diabetes-info.herokuapp.com/">diatbetes information website</a> -->
+</div>
+</div>
+<div class="row dark rows_of_email" >
+  <div class="col-md-12">
+    <div class="email_box">
+      <p>Send email to Phillip Salazar</p>
+      <input type="text" value="" class="email_sender" id="email_sender">
+      <br>
+      <br>
+      <textarea class="email_message" value="" id="email_message"></textarea>
+      <br>
+      <button id="buttonz" class="btn btn-light">Send</button>
+    </div>
+
+  </div>
+</div>
 <!-- footer row -->
 <div class="row last_row">
+  <div class="bottom">
+  <a href="#"><p>Github: is https://github.com/PhillipSalazar</p></a>
+  <br>
+  <div><p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p></div>
+</div>
 </div>
 
 </div>

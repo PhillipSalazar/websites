@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const parser = require('json-parser');
 app.set('view engine', 'hbs');
 app.use(express.static('views'));
 app.use(express.static('www'));
@@ -15,12 +16,30 @@ app.use('/websites', express.static(__dirname + '/www/websites/diatbetes'));
    app.get('/', function (req, res) {
 
    res.render('index', {
-     title : "Phillip Salazar",
-     about : "A student of software."
+     title      : "Phillip Salazar",
+     about      : "A student of software.",
+     intro_text : "Welcome to Phillipjs. A thing about Javascript!"
     });
 
 });
 
+app.get('/about', function(req, res){
+/*
+  res.render('about' {
+    name : ""
+  });
+  */
+});
+
+app.get('/api', function(req, res){
+  var data = {
+    "a": "codez1",
+    "b": "code "
+  }
+//  var object = JSON.parse(object);
+  res.send(data);
+
+});
 
 app.listen(process.env.PORT || 8000, function () {
   console.log('Example app listening on port 8000!')
