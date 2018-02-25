@@ -3,10 +3,13 @@
   <title>Examples Websites</title>
 <link rel="stylesheet" href="/css/bootstrap.min.css">
 <link href="/css/index_style.css" rel="stylesheet">
+<link href="/css/mobile.css" rel="stylesheet">
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/scripts.js"></script>
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+<script src="/js/dom.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel=icon href=/assets/favicon.png sizes="16x16" type="image/png">
 </head>
 <body>
 <div class="container-fluid">
@@ -14,7 +17,7 @@
 <div class="row page-head">
   <div class="page-header">
 <a href="/"><h1>{{title}}</h1></a>
-<p>{{about}}</p>
+<p>{{intro_text}}</p>
 
   </div>
 </div>
@@ -27,19 +30,23 @@
   <div class="boxes_of_websites"></div>
   <a href="https://diabetes-info.herokuapp.com/">diatbetes information website</a>
 -->
-<p id="intro_text">{{intro_text}}</p>
+<!--<p class="intro_text"></p> -->
+<div class="mobile-box">
+<h3 class="intro_text">{{about}}</h3>
+<p class="intro_text">{{summary}} <a href="http://makentastes.com/">Make n' Tastes</a></p>
+</div>
 </div>
 
 <!-- content for games row -->
 <div class="row rows_of_content row_c_2">
 
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6">
   <div id="projects" class="boxes_of_websites">
   <img src="assets/programming-code.svg">
 </div>
 <!--  <a href="https://diabetes-info.herokuapp.com/">diatbetes information website</a> -->
 </div>
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6">
   <div id="games" class="boxes_of_websites">
     <img src="assets/gamepad.svg">
   </div>
@@ -47,21 +54,26 @@
 </div>
 </div>
 <!-- content for post row -->
+
+<!--
 <div class="row rows_of_content row_c_3">
 
-<div class="col-md-6">
+<div class="col-md-6 sol-sm-6">
   <div id="blogz" class="boxes_of_websites">
     <img src="assets/blogger.svg">
   </div>
-<!--  <a href="https://diabetes-info.herokuapp.com/">diatbetes information website</a> -->
+comment out  <a href="https://diabetes-info.herokuapp.com/">diatbetes information website</a>
 </div>
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6">
   <div id="about" class="boxes_of_websites">
     <img src="assets/about-successful-man.svg">
   </div>
-<!--  <a href="https://diabetes-info.herokuapp.com/">diatbetes information website</a> -->
+commet out <a href="https://diabetes-info.herokuapp.com/">diatbetes information website</a>
 </div>
 </div>
+
+-->
+<!--
 <div class="row dark rows_of_email" >
   <div class="col-md-12">
     <div class="email_box">
@@ -76,12 +88,13 @@
 
   </div>
 </div>
+-->
 <!-- footer row -->
 <div class="row last_row">
   <div class="bottom">
   <a href="#"><p>Github: is https://github.com/PhillipSalazar</p></a>
   <br>
-  <div><p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p></div>
+  <div class="mobile-box"><p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p></div>
 </div>
 </div>
 

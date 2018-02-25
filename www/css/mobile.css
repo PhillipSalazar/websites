@@ -1,0 +1,35 @@
+@media only screen and (max-width: 500px) {
+    .boxes_of_websites {
+        width: 125px;
+        height: 125px;
+        margin-top: 15%;
+    }
+
+    .page-header {
+      margin-left: 15%;
+    }
+
+    .intro_text {
+      margin-left: 15%;
+    }
+
+    .row_c_1 {
+      height: 100px;
+    }
+    .mobile-box {
+      width: 75%;
+    }
+
+}
+
+@media only screen and ( max-width: 500px) {
+  .boxes_of_websites img {
+    width: 75px;
+    height: 75px;
+    margin-left: 20%;
+  }
+
+  #blog {
+    margin-top: -5% !important;
+  }
+}

@@ -27,7 +27,7 @@ li {
 }
 /* rows styling */
 .rows_of_content {
-  height: 350px;
+  height: 450px;
 /*  border: 2px solid black; */
 }
 
@@ -42,7 +42,7 @@ li {
   height: 250px;
   width: 250px;
   margin-left: 30%;
-  margin-top: 5%;
+  margin-top: 10%;
   border-radius: 20px;
 }
 
@@ -52,9 +52,11 @@ li {
   margin-top: 25%;
 }
 
-#intro_text {
-  margin-left: 35%;
+
+.intro_text {
+  margin-left: 20%;
   margin-top: 2%;
+  color: white;
 }
 
 #projects {
@@ -66,10 +68,12 @@ li {
 }
 #blogz {
   background-color: yellow;
+
 }
 
 #about {
   background-color:  #33cc33;
+
 
 }
 
@@ -94,6 +98,7 @@ li {
 
 .row_c_1 {
   background-color: #404040;
+  height: 200px !important;
   /*#2eb82e;*/
 }
 

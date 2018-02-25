@@ -18,7 +18,11 @@ app.use('/websites', express.static(__dirname + '/www/websites/diatbetes'));
    res.render('index', {
      title      : "Phillip Salazar",
      about      : "A student of software.",
-     intro_text : "Welcome to Phillipjs. A thing about Javascript!"
+     intro_text : "Welcome to Phillipjs. A thing about Javascript!",
+     about      : "About Me!",
+     summary    : "I am a self-taught developer, that likes to work in web development. " +
+                  "I like to make HTML5 games, and design websites. " +
+                  "I also run a web site called"
     });
 
 });
