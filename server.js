@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const parser = require('json-parser');
+const storage = require('./storage.js');
+
 app.set('view engine', 'hbs');
 app.use(express.static('views'));
 app.use(express.static('www'));
@@ -16,35 +18,44 @@ app.use('/websites', express.static(__dirname + '/www/websites/diatbetes'));
    app.get('/', function (req, res) {
 
    res.render('index', {
-     title      : "Phillip Salazar",
-     about      : "A student of software.",
-     intro_text : "Welcome to Phillipjs. A thing about Javascript!",
-     about      : "About Me!",
-     summary    : "I am a self-taught developer, that likes to work in web development. " +
-                  "I like to make HTML5 games, and design websites. " +
-                  "I also run a web site called"
+     title      : storage.title,
+     about      : storage.about,
+     intro_text : storage.intro_text,
+     about      : storage.about,
+     summary    : storage.summary
     });
 
 });
 
-app.get('/about', function(req, res){
-/*
-  res.render('about' {
-    name : ""
+app.get('/websites', function(req, res){
+ //res.sendFile(path.join(__dirname + '/projects.hbs'));
+  res.render('websites', {
+    title : storage.projects_title,
+    text  : storage.projects_text
   });
-  */
 });
 
+app.get('/games', function(req, res){
+  res.render('games', {
+    title : "Games"
+
+  });
+});
+
+
+/*
 app.get('/api', function(req, res){
   var data = {
     "a": "codez1",
     "b": "code "
   }
+
 //  var object = JSON.parse(object);
   res.send(data);
 
 });
-
+*/
 app.listen(process.env.PORT || 8000, function () {
-  console.log('Example app listening on port 8000!')
+  console.log('Example app listening on port 8000!');
+  console.log(storage.summary);
 });

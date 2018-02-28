@@ -1,0 +1,42 @@
+/* CSS variable for font*/
+@font-face {
+    font-family: fontz;
+    src: url(../assets/font.ttf);
+}
+
+/* rows */
+.top-row {
+  background-color: #404040;
+  color: white;
+  height: 200px;
+
+}
+
+.middle-row {
+  height: 600px;
+
+}
+
+.last-row {
+  background-color: #404040;
+  color: white;
+  height: 200px;
+}
+
+.last-row a {
+  color: white;
+}
+
+/* increments */
+.top-row h1 {
+  margin-left: 45%;
+}
+
+.top-row h3 {
+  margin-left: 25%;
+}
+
+.last-row div {
+  margin-left: 25%;
+  margin-top: 5%;
+}
