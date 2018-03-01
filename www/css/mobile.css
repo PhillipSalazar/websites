@@ -22,7 +22,7 @@
 
 }
 
-@media only screen and ( max-width: 500px) {
+@media only screen and ( max-width: 500px ) {
   .boxes_of_websites img {
     width: 75px;
     height: 75px;
@@ -33,3 +33,47 @@
     margin-top: -5% !important;
   }
 }
+
+/* for projects page */
+
+@media only screen and ( max-width: 500px ){
+  .middle-row {
+    height: 1000px;
+  }
+
+  .boxes {
+    margin-left: 12%;
+  }
+
+  .box {
+    height: 200px !important;
+    width: 200px !important;
+    margin-top: 10% !important;
+  }
+  .box .box-header {
+    width: 175px !important;
+  }
+
+  #proTitle {
+    margin-left: 5%;
+  }
+
+  #proIntro {
+    margin-left: 5%;
+  }
+
+  .last-row .mobile-box {
+    margin-left: 0% !important;
+    margin-top: 0%;
+  }
+}
+
+
+/*
+
+@media only screen and ( max-width: 700px ){
+  .middle-row {
+    height: 200px !important;
+  }
+}
+*/

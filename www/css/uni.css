@@ -14,6 +14,7 @@
 
 .middle-row {
   height: 600px;
+  /*height: auto + ; */
 
 }
 
@@ -27,16 +28,8 @@
   color: white;
 }
 
-/* increments */
-.top-row h1 {
-  margin-left: 45%;
-}
 
-.top-row h3 {
-  margin-left: 25%;
-}
-
-.last-row div {
-  margin-left: 25%;
-  margin-top: 5%;
+.bottom {
+  margin-left: 15%;
+  margin-top: 3%;
 }

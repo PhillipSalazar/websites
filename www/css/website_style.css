@@ -1,3 +1,21 @@
+/* variables */
+@font-face {
+    font-family: fontz;
+    src: url(../assets/font.ttf);
+}
+h1 , h3 , li , p {
+  font-family: fontz;
+}
+
+/* increments */
+.top-row h1 {
+  margin-left: 15%;
+}
+
+.top-row h3 {
+  margin-left: 15%;
+}
+
 
 .box {
   height: 250px;
@@ -21,4 +39,8 @@
 
 .box ul li {
   margin-top: 10%;
+}
+
+.boxes a {
+  color: black;
 }

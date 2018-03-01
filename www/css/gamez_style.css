@@ -1,0 +1,19 @@
+.pongz {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: black;
+}
+
+#p1 img {
+/*  width: 150px;
+  height: 150px; */
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.mini-boxes {
+  margin-left: 25%;
+  margin-top: 7%;
+}
